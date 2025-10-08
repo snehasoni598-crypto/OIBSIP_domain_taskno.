@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3); /* Yellowish gradient */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #f57c00, #fb8c00); /* darker warm orange shade */
+  color: white;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Intro Section */
+.intro {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #ffe082; /* slightly darker yellow for image visibility */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.intro-img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+/* Converter Section */
+.converter-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+/* Converter Card 3D */
+.converter-card {
+  background: #fffde7;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 380px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.converter-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card-img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Input Box */
+.input-box, .unit-box {
+  background: linear-gradient(135deg, #fff59d, #fff176); /* warm yellow input */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.input-box label, .unit-box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.input-box input, .unit-box select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-box input:focus, .unit-box select:focus {
+  border: 2px solid #ff9800;
+}
+
+/* Button */
+.converter-card button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.converter-card button:hover {
+  background: #fb8c00;
+  transform: translateY(-3px);
+}
+
+.result {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff6f00;
+}
+
+/* Tips Section */
+.tips {
+  max-width: 350px;
+  background: #fff9c4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.tips h3 {
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+
+.tips ul {
+  list-style: disc inside;
+  max-height: 450px; /* keep box length same */
+  overflow-y: auto;
+}
+
+.tips li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .converter-section{
+    flex-direction: column;
+    align-items: center;
+  }
+}

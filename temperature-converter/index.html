@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pro Temperature Converter</h1>
+    <p>Convert temperatures accurately between Celsius, Fahrenheit, and Kelvin</p>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section class="intro">
+      <img src="images/weather.png" alt="Weather Icon" class="intro-img">
+      <h2>Welcome to the Professional Converter</h2>
+      <p>
+        Quickly convert temperatures with precision. Ideal for students, engineers, and scientists.
+        Check units carefully before converting and enjoy accurate results every time!
+      </p>
+      <p>
+        Our converter also provides quick tips to ensure your inputs are accurate. 
+        Hover over the card for a smooth 3D effect and see instant results in all units.
+      </p>
+    </section>
+
+    <!-- Converter Section -->
+    <section class="converter-section">
+      <div class="converter-card">
+        <img src="images/thermometer.png" alt="Thermometer Icon" class="card-img">
+
+        <div class="input-box">
+          <label for="tempInput">Enter Temperature:</label>
+          <input type="text" id="tempInput" placeholder="e.g., 25">
+        </div>
+
+        <div class="unit-box">
+          <label for="unitSelect">Input Unit:</label>
+          <select id="unitSelect">
+            <option value="c">Celsius (°C)</option>
+            <option value="f">Fahrenheit (°F)</option>
+            <option value="k">Kelvin (K)</option>
+          </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <div id="result" class="result"></div>
+      </div>
+
+      <!-- Tips & Info -->
+      <div class="tips">
+        <h3>Tips & Info</h3>
+        <ul>
+          <li>Enter valid numeric temperature values only.</li>
+          <li>Decimal numbers are accepted.</li>
+          <li>Conversion is accurate up to 2 decimal places.</li>
+          <li>Units are case-insensitive and clear in dropdown.</li>
+          <li>Hover over the card to see a 3D effect.</li>
+          <li>Always double-check the unit selection before converting.</li>
+          <li>Kelvin input must be above 0 K (absolute zero) for realistic conversions.</li>
+          <li>Use the converter for educational, professional, or personal needs.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pro Temperature Converter. Built professionally with modern UI elements.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
